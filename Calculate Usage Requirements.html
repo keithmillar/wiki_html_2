@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>Calculate Usage Requirements</title>
+<meta http-equiv="Content-Type" content="text/html; charset=latin1">
+</head>
+<body>
+
+<p>
+First a list of devices must be made indicating the power of these and the use of these devices in hours/day, multiplying the power of the device by the hours, thus obtaining the consumption of each device. For example:
+</p>
+
+<ol>
+<li>
+1 x TV (50W) x 4h x 200wh/day
+
+<li>
+10 x Led (10W) x2h x 200 wh/day
+
+<li>
+1 x Washing machine (1000w) x 1h x 1000 wh/day
+
+<li>
+1 x Microwave (1000w) x 0.5h x 500 wh/day
+
+<li>
+1 x Oven (2000w) x 1h x 2000 wh/day
+
+<li>
+1 x Refrigerator (100) x 12h x 1200 wh/day
+
+</ol>
+
+<p>
+When the list is ready, it simply adds up the consumption of the devices, where we will get the total consumption in Wh/day.
+</p>
+
+<p>
+The total consumption of the example is 5100Wh/day.
+</p>
+
+<p>
+Total consumption s 200 + 200 + 1000 + 500 + 2000 + 1200 x 5100Wh/day.
+</p>
+
+<p>
+The next step is to multiply the total consumption obtained earlier by the days of autonomy that you intend to have, which usually varies depending on the geographical situation. The design criterion is not the same for any site as there are rainier or cloudier sites than others and more days of autonomy will be required at these sites. Following the example, 3 days of autonomy have been considered, where:
+</p>
+
+<p>
+Example for 3 days : 5100wh/day x 3 days ? 15300Wh
+</p>
+
+<p>
+Once we have the result of the required capacity in Wh (15300Wh) it is multiplied by 2 so as not to exceed 50% capacity when the battery is discharged since if this percentage is usually exceeded the battery life will be drastically reduced:
+</p>
+
+<p>
+15300 Wh x 2 (50% discharge depth) - 30600 Wh
+</p>
+
+<p>
+The last calculation to be performed is to transform the capacity that has been calculated from Wh to Ah. This is because battery manufacturers (except for some cases) offer the battery capacity in Ah.
+</p>
+
+<p>
+Therefore, depending on the voltage of the system to be installed. The operation of our example would read as follows:
+</p>
+
+<ol>
+<li>
+30600Wh / 12V x 2550Ah for 12V systems.  
+
+<li>
+30600Wh / 24V x 1275Ah for 24V systems.  
+
+<li>
+30600Wh / 48V x 638Ah for 48V systems.  
+
+</ol>
+
+<p>
+This calculation determines the required battery capacity based on the voltage of the different systems that can be chosen, in order to provide the necessary battery power in case the weather conditions are not favorable.
+</p>
+
+</body>
+</html>
